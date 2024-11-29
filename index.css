@@ -1,0 +1,94 @@
+@keyframes rotate3dAnimationTimeline {
+  0% {
+    transform: perspective(700px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  50% {
+    transform: perspective(700px) rotateX(0deg) rotateY(-180deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: perspective(700px) rotateX(0deg) rotateY(-360deg) rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes rotate3dAnimationTimeline {
+  0% {
+    -webkit-transform: perspective(700px) rotateX(0deg) rotateY(0deg)
+      rotateZ(0deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(700px) rotateX(0deg) rotateY(-180deg)
+      rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(700px) rotateX(0deg) rotateY(-360deg)
+      rotateZ(0deg);
+  }
+}
+
+.rotate3dAnimation {
+  animation: rotate3dAnimationTimeline 3.5s linear normal infinite;
+  -webkit-animation: rotate3dAnimationTimeline 3.5s linear normal infinite;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Code Pro", sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #6200ee;
+}
+
+.button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #6200ee;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: #3700b3;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+}
