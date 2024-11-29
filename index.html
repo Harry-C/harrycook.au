@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harry's Site</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  	<link rel="stylesheet" href="index.css">
-	<script src="index.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Harry's Site</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my site!</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/harrisoncook42/">
+                    <img onload="true" alt="LinkedIn" src="images/LI-In-Bug.png" />
+                </a>
+                <a href="https://github.com/Harry-C">
+                    <img onload="true" alt="GitHub" src="images/github-mark-white.svg" />
+                </a>
+            </nav>
+        </header>
 
-<header>
-    <h1>Welcome to my site!</h1>
-    <nav>
-        <a href="https://www.linkedin.com/in/harrisoncook42/">
-            <img onload="true" alt="LinkedIn" src="images/LI-In-Bug.png" style="height:25px">
-        </a>
-        <a href="https://github.com/Harry-C">
-            <img onload="true" alt="GitHub" src="images/github-mark-white.svg" style="height:25px">
-        </a>
-    </nav>
-</header>
+        <div class="wrapper">
+            <div class="card">
+                <div class="image">
+                    <a href="https://jsrf.harrycook.au">
+                        <img onload="true" alt="Jet Set Radio Future Radio!" src="images/jsrf.png" />
+                    </a>
+                </div>
+                <div class="details">
+                    <h1>Jet Set Radio</h1>
+                    <h2>Tune in!</h2>
+                    <p class="desc">Reverse engineered and stolen from jetsetradio.live</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"></div>
+                <div class="details">
+                    <h1>Title</h1>
+                    <h2>Subheading</h2>
+                    <p class="desc">Description</p>
+                </div>
+            </div>
+        </div>
 
-<a href="https://jsrf.harrycook.au">
-    <img class="rotate3dAnimation" onload="true" alt="Jet Set Radio Future Radio!" src="images/jsrf.png" style="height: 100%; text-align: center; margin: auto; display: grid;">
-</a>
-
-
-<footer>
-    <button class="button" onclick="scrollToTop()">Back to Top</button>
-</footer>
-
-</body>
+        <footer>
+            <button class="button" onclick="scrollToTop()">Back to Top</button>
+        </footer>
+    </body>
 </html>
