@@ -22,6 +22,19 @@ header {
 h1 {
     font-size: 2.5em;
     margin: 0;
+    padding: 2px;
+}
+
+h2 {
+    font-size: 1.0em;
+    margin: 0;
+    padding: 2px;
+}
+
+h3 {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 2px;
 }
 
 nav {
@@ -69,18 +82,18 @@ footer {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 50px;
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
 .card {
     position: relative;
-    width: 350px;
-    height: 450px;
+    width: 500px;
+    height: 250px;
     background-color: #121212;
     border-radius: 18px;
     overflow: hidden;
@@ -114,7 +127,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: .5s;
 }
 
